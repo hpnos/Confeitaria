@@ -1,0 +1,221 @@
+[{
+  "_id": {
+    "$oid": "69259c7b1ae5bce1a580edec"
+  },
+  "itens": [
+    {
+      "nome": "Aimpim",
+      "qtd": "1"
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T12:09:31.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69259cea1ae5bce1a580ee18"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": "1"
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T12:11:22.884Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69259cfb1ae5bce1a580ee1f"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": "1"
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T12:11:39.965Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a4721ae5bce1a580ee8a"
+  },
+  "itens": [
+    {
+      "nome": "churros",
+      "qtd": "1"
+    }
+  ],
+  "total_venda": 20,
+  "lucro_estimado": 0,
+  "data": {
+    "$date": "2025-11-25T12:43:30.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a47b1ae5bce1a580ee9d"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": "1"
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T12:43:39.038Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a63b549267de2cae2064"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": 2
+    }
+  ],
+  "total_venda": 100,
+  "lucro_estimado": 50,
+  "data": {
+    "$date": "2025-11-25T12:51:07.909Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a647549267de2cae2085"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": 1
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T12:51:19.178Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a652549267de2cae20a8"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": 1
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T12:51:30.294Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a798506e15bcadeb5ded"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": 1
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T12:56:56.279Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a7b4506e15bcadeb5e39"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": 1
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T12:57:24.039Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a98e5bff26f428c4f8e2"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": 1
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T13:05:18.391Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a99f5bff26f428c4f907"
+  },
+  "itens": [
+    {
+      "nome": "churros",
+      "qtd": 2
+    }
+  ],
+  "total_venda": 40,
+  "lucro_estimado": 0,
+  "data": {
+    "$date": "2025-11-25T13:05:35.758Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925abec9e05d83cde92693a"
+  },
+  "itens": [
+    {
+      "nome": "Aipim",
+      "qtd": 1
+    }
+  ],
+  "total_venda": 50,
+  "lucro_estimado": 25,
+  "data": {
+    "$date": "2025-11-25T13:15:24.217Z"
+  },
+  "__v": 0
+}]

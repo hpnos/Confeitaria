@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "69259ccc1ae5bce1a580ee00"
+  },
+  "nome": "Aipim",
+  "preco_venda": 50,
+  "custo_producao": 25,
+  "receita": [
+    {
+      "insumo_id": {
+        "$oid": "69259c641ae5bce1a580edd1"
+      },
+      "nome_insumo": "fermento",
+      "qtd_necessaria": 1,
+      "_id": {
+        "$oid": "6925a78f506e15bcadeb5dc9"
+      }
+    },
+    {
+      "insumo_id": {
+        "$oid": "69259c5b1ae5bce1a580edcc"
+      },
+      "nome_insumo": "Farinha",
+      "qtd_necessaria": 1,
+      "_id": {
+        "$oid": "6925a78f506e15bcadeb5dca"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6925a46b1ae5bce1a580ee7e"
+  },
+  "nome": "churros",
+  "preco_venda": 20,
+  "custo_producao": 20,
+  "receita": [
+    {
+      "insumo_id": {
+        "$oid": "69259c5b1ae5bce1a580edcc"
+      },
+      "nome_insumo": "Farinha",
+      "qtd_necessaria": 1,
+      "_id": {
+        "$oid": "6925a46b1ae5bce1a580ee7f"
+      }
+    }
+  ],
+  "__v": 0
+}]

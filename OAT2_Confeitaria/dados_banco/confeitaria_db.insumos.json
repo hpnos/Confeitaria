@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "69259c5b1ae5bce1a580edcc"
+  },
+  "nome": "Farinha",
+  "custo_unitario": 20,
+  "estoque_atual": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69259c641ae5bce1a580edd1"
+  },
+  "nome": "fermento",
+  "custo_unitario": 5,
+  "estoque_atual": 7,
+  "__v": 0
+}]

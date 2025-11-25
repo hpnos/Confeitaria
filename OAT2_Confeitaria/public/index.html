@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Confeitaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light pb-5">
+
+<div class="container mt-3">
+    <h3 class="text-center mb-4">🍰 Sistema Confeiteira</h3>
+
+    <div class="card mb-4 shadow-sm border-primary">
+        <div class="card-body text-center">
+            <h5>Balanço do Mês</h5>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <small class="text-muted">Faturamento</small>
+                    <h3 class="text-primary" id="dash-faturamento">R$ 0,00</h3>
+                </div>
+                <div class="col-6">
+                    <small class="text-muted">Lucro Estimado</small>
+                    <h3 class="text-success" id="dash-lucro">R$ 0,00</h3>
+                </div>
+            </div>
+            <div class="mt-3 pt-2 border-top">
+                <span class="badge bg-secondary" style="font-size: 1em;">
+                    🛒 Total de Vendas: <span id="dash-qtd">0</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav nav-pills nav-fill mb-3" id="pills-tab">
+        <li class="nav-item"><button class="nav-link active" onclick="mudarAba('venda')">Vender</button></li>
+        <li class="nav-item"><button class="nav-link" onclick="mudarAba('prod')">Produtos</button></li>
+        <li class="nav-item"><button class="nav-link" onclick="mudarAba('insumo')">Insumos</button></li>
+        <li class="nav-item"><button class="nav-link" onclick="mudarAba('relatorio')">Relatório</button></li>
+    </ul>
+
+    <div id="aba-venda" class="secao">
+        <div class="card p-3">
+            <h5>Nova Venda</h5>
+            <select id="sel-prod-venda" class="form-select mb-2"></select>
+            <input type="number" id="qtd-venda" class="form-control mb-2" placeholder="Quantidade" value="1">
+            <button class="btn btn-success w-100" onclick="vender()">Confirmar Venda</button>
+        </div>
+    </div>
+
+    <div id="aba-insumo" class="secao d-none">
+        <div class="card p-3 mb-3">
+            <h5>Novo Insumo</h5>
+            <input id="nome-ins" class="form-control mb-2" placeholder="Nome (ex: Farinha)">
+            <input id="custo-ins" type="number" class="form-control mb-2" placeholder="Custo Unitário (R$)">
+            <input id="est-ins" type="number" class="form-control mb-2" placeholder="Estoque Inicial">
+            <button class="btn btn-primary w-100" onclick="salvarInsumo()">Salvar</button>
+        </div>
+        <h6>Estoque Atual (Editar/Apagar):</h6>
+        <ul id="lista-insumos" class="list-group"></ul>
+    </div>
+
+    <div id="aba-prod" class="secao d-none">
+        <div class="card p-3 mb-3">
+            <h5>Gerenciar Produto</h5>
+            <input id="nome-prod" class="form-control mb-2" placeholder="Nome do Bolo">
+            <input id="preco-prod" type="number" class="form-control mb-2" placeholder="Preço Venda (R$)">
+            
+            <div class="border p-2 mb-2 bg-white rounded">
+                <small class="fw-bold">Ingredientes da Receita:</small>
+                <div class="d-flex gap-2 mt-1">
+                    <select id="sel-insumo-receita" class="form-select form-select-sm"></select>
+                    <input id="qtd-uso" type="number" class="form-control form-control-sm" placeholder="Qtd" style="width: 80px;">
+                </div>
+                <button class="btn btn-sm btn-secondary w-100 mt-2" onclick="addIngrediente()">+ Adicionar Ingrediente</button>
+                
+                <ul id="lista-receita-temp" class="mt-2 list-group list-group-flush small"></ul>
+            </div>
+            
+            <button class="btn btn-primary w-100" onclick="salvarProduto()">Criar Produto</button>
+        </div>
+        <h6>Catálogo Atual:</h6>
+        <ul id="lista-produtos" class="list-group"></ul>
+    </div>
+
+   <div id="aba-relatorio" class="secao d-none">
+        <div class="card p-3 shadow-sm">
+            <h5 class="mb-3">📅 Relatório Mensal</h5>
+            
+            <div class="mb-4">
+                <label class="form-label text-muted">Escolha o Mês para analisar:</label>
+                <input type="month" id="filtro-mes" class="form-control" onchange="buscarRelatorioMensal()">
+            </div>
+
+            <div class="alert alert-success text-center mb-3">
+                <small>Faturamento no Período</small>
+                <h2 id="rel-faturamento" class="fw-bold">R$ 0,00</h2>
+            </div>
+
+            <h6 class="text-muted border-bottom pb-2">Itens Vendidos no Mês:</h6>
+            <ul id="lista-relatorio-mes" class="list-group list-group-flush">
+                <li class="list-group-item text-center text-muted small">
+                    Selecione um mês acima para ver os dados.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
